@@ -1,0 +1,358 @@
+/* css styling page for our project */
+body {
+    margin: 0;
+    font-family: "Arial", "Helvetica", "sans-serif";
+    background-image: url(fullsizeoutput_1c.jpeg); 
+    background-size:auto;
+    background-position: center;
+    background-repeat:repeat-y;
+    font-weight: bold;
+}
+.content {
+    text-align: center;
+    font-family:serif;
+    color: gray;
+    padding-top: 5em;
+}
+.tab-content { /* padding top for the img */
+    text-align: center;
+    font-family:serif;
+    padding-top: 8em;     
+}
+#homeIcon {font-size: 20px;}
+.home {
+    position: fixed; /* Make it stick/fixed */
+    z-index: 500;
+    background-color: white;
+    top:0; /* Stay on top */
+    right:0;
+    width: 100%; /* Full width */
+    text-align:left;
+    overflow: hidden;
+    transition: top 0.3s; /* Transition effect when the nav sliding down and up */
+}
+strong {
+    color:rgb(70,121,189);
+}
+#BodyIMG { padding-top:50px;}
+#hariloss {padding-top:50px;}
+#faceIMG {padding-top:50px;}
+#awardsSize {
+    max-width: 700px; 
+}
+/* contact style */
+.icon-bar {
+    margin: auto;
+    width:35%;
+    overflow: auto;
+    padding: 10px; 
+}
+.icon-bar a {
+    float: left;
+    width: 20%;
+    padding: 10px 0 0;
+    transition: all 0.3s ease;
+    color: darkgray;
+    font-size: 35px; 
+    padding-right: 30px;
+}
+.icon-bar a:hover {
+ color:rgb(70,121,189);
+}
+.footer h6 {
+	text-align:center;
+	color:gray;
+} 
+/*stars color*/
+.checked {
+    color: orange;
+}
+/* CSS for slideshows */
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    padding-top: 0px;
+}
+/* Hide the images by default */
+.mySlides {
+    display:none;
+}
+.mySlides img {
+    max-width:800%;
+    height: 500px;   
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.8s;
+    animation-name: fade;
+    animation-duration: 1.8s;
+}
+@keyframes fade {
+    from {opacity: .1} 
+    to {opacity: .8}
+}
+/*Product*/
+*{box-sizing: border-box;}
+.main {
+    max-width: 950px;
+    margin: auto;
+}
+.main p {
+    font-size: 13px;
+}
+.row {
+    margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 4px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.product {
+  position: relative;
+  width: 90%; /* space bettwen pictures */
+  background-color:lightgray;
+  padding: 5px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:lightgray;
+}
+.product:hover .overlay {
+  opacity: .6;
+}
+.text {
+  color:black;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* search */
+.container input[type=text] {
+    width: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: right;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#secrchIcon {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 5px 20px; /*position of icon */   
+}
+.container input[type=text]:focus {
+    width: 100%;
+    border: none;
+    outline: none ;
+    border: 1px solid #ccc;
+}
+nav {
+    color: gray; /* search icon color */
+}
+/*styl for comment form*/
+* {box-sizing: border-box}
+/*posintion of comment button*/
+.inputForm{
+    padding-right: 584px; 
+    padding-top: 20px;}
+.commentForm h1 {
+        color: gray;
+        text-align: center;}
+.commentForm div {
+       padding-right: 120px; /*position in center*/
+    }
+/* Full-width input fields */
+.input input[type=email], .input input[type=text] {
+    width:192%;/*size of place for user input*/
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:5px;
+    box-sizing:border-box;
+    transition:.3s;
+    padding-right: 40px;}
+/* Add a background color when the inputs get focus */
+.input input[type=email]:focus, .input input[type=text]:focus { 
+    outline: none;
+    border-color:rgb(70,121,189);;
+    box-shadow:0 0 8px 0 ;
+    color:rgb(70,121,189);
+}
+textarea {
+    width:80%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;}
+textarea:focus{
+    border-color:rgb(70,121,189);;
+    box-shadow:0 0 8px 0 ;
+    color:rgb(70,121,189);}
+.input{
+    position:relative;
+}
+/*icon style in form*/
+.input i{
+    position:absolute;
+    left:0;
+    top:8px;
+    padding:9px 550px; /*position of icon*/
+    color:#aaa;
+    transition:.3s;}
+.input input[type=text]:focus + i{
+    color:rgb(70,121,189);
+}
+.input input[type=email]:focus + i{
+     color:rgb(70,121,189);
+  }
+.input input[type=radio]:focus + span {
+    color:rgb(70,121,189);
+}
+.input .inputIconBg i{
+    background-color:#aaa;
+    color:#fff;
+    padding:9px 4px;
+    border-radius:4px 0 0 4px;}
+.input .inputIconBg input[type=email]:focus + i{
+    color:#fff;
+    background-color:dodgerBlue;}
+.input .inputIconBg input[type=text]:focus + i{
+    color:#fff;
+    background-color:dodgerBlue;}
+#submit{
+    background-color:#F7F7F7;
+    border-radius:12px;
+    color:gray;
+    display:inline-block;
+    font-family:'Montserrat',"Arial", "Geneva", sans-serif;
+    font-size:14px;
+    font-weight:700;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+     width:90px;
+    
+    outline: none;
+    }
+#reset{
+     background-color:#F7F7F7;
+     border-radius:12px;
+     color:gray;
+     display:inline-block;
+     font-family:'Montserrat','Arial', 'Geneva', sans-serif;
+     font-size:14px;
+     font-weight:700;
+     line-height:20px;
+     text-align:center;
+     text-decoration:none;
+     width:90px;
+    
+     outline: none;
+    }
+#button {
+     background-color:#F7F7F7;
+     border-radius:13px;
+     color:gray;
+     display:inline-block;
+     font-family:'Montserrat','Arial', 'Geneva', sans-serif;
+     font-size:17px;
+     font-weight:700;
+     line-height:30px;
+     text-align:center;
+     text-decoration:none;
+     width:250px;
+     outline: none;}
+/* Add padding to inputForm elements */
+.commentForm {
+    padding: 16px;
+}
+/* The Modal Style */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 2px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+/* The Close Button (x) */
+#x {
+    z-index: 500;
+    position:absolute;
+    right: 9.5em;
+    top: 3em;
+    font-size: 40px;
+    font-weight: bold;
+    color:gray;
+    opacity: inherit;
+}
+#x:hover, #x:focus {
+    color: #f44336;
+    cursor: pointer;} 
+/*end styl for comment form*/
+.input p {
+    color:gray; /* color of the gender*/
+}
